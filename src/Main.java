@@ -6,57 +6,59 @@ public class Main {
 		// to see how IntelliJ IDEA suggests fixing it.
 		
 		//task1
-		int clientOS=1;
-		boolean iOS=clientOS==0;
+		int clientOS = 1;
+		boolean iOS = clientOS == 0;
 		if (iOS) {
 			System.out.println("Установите версию приложения для iOS по ссылке");
-		}else System.out.println("Установите версию приложения для Android по ссылке");
+		} else System.out.println("Установите версию приложения для Android по ссылке");
 		
 		//task2
 		
-		int clientOS2=1;
-		int clientDeviceYear=2015;
-		boolean modernTelephone=clientDeviceYear<2015;
-		boolean iOS2=clientOS2==0;
+		int clientOS2 = 1;
+		int clientDeviceYear = 2015;
+		boolean modernTelephone = clientDeviceYear < 2015;
+		boolean iOS2 = clientOS2 == 0;
 		if (iOS2) {
 			if (modernTelephone)
 				System.out.println("Установите облегчённую версию приложения для iOS по ссылке");
-		    else System.out.println("Установите версию приложения для iOS по ссылке");
-		}
-		else if(modernTelephone){
+			else System.out.println("Установите версию приложения для iOS по ссылке");
+		} else if (modernTelephone) {
 			System.out.println("Установите облегчённую версию приложения для Android по ссылке");
-		    }else {
+		} else {
 			System.out.println("Установите версию приложения для Android по ссылке");
 		}
 		
 		//task3
 		
-		int year=2100;
-		if (year>1584) {
-			if(year%400==0) {
+		int year = 2100;
+		if (year > 1584) {
+			if (year % 400 == 0) {
 				System.out.println("Год является високосным");
-			}else if(year%100==0) {
+			} else if (year % 100 == 0) {
 				System.out.println("Год не является високосным");
-			}else if(year%4==0) {
+			} else if (year % 4 == 0) {
 				System.out.println("Год является високосным");
-			}
-				else System.out.println("Год не является високосным");
-			}
+			} else System.out.println("Год не является високосным");
+		}
 		
 		
 		//task4
 		
-		int deliveryDistance=105;
-		if (deliveryDistance<20) {
+		int deliveryDistance = 105;
+		if (deliveryDistance < 20) {
 			System.out.println("Потребуется дней: сутки");
-		} if (deliveryDistance>=20 && deliveryDistance<60) {System.out.println("Потребуется дней: двое суток");
-			}else if (deliveryDistance>=60 && deliveryDistance<100) {System.out.println("Потребуется дней: трое суток");
-		}else {System.out.println("Свыше 100 км доставки нет");
+		}
+		if (deliveryDistance >= 20 && deliveryDistance < 60) {
+			System.out.println("Потребуется дней: двое суток");
+		} else if (deliveryDistance >= 60 && deliveryDistance < 100) {
+			System.out.println("Потребуется дней: трое суток");
+		} else {
+			System.out.println("Свыше 100 км доставки нет");
 		}
 		
 		//task5
 		
-		int monthNumber=15;
+		int monthNumber = 15;
 		switch (monthNumber) {
 			case 12:
 			case 1:
@@ -83,6 +85,5 @@ public class Main {
 		}
 		
 		
-	
 	}
 }
